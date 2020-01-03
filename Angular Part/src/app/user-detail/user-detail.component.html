@@ -1,0 +1,26 @@
+<h2>User Details</h2> 
+
+<hr/>
+<div *ngIf="users">
+  <div>
+    <label><b>User Name: </b></label> {{users.user_name}}
+  </div>
+  <div>
+    <label><b>Address: </b></label> {{users.address}}
+  </div>
+  <div>
+    <label><b>Contact No.: </b></label> {{users.phone}}
+  </div> 
+  
+  <div>
+    <label><b>Gender: </b></label> {{users.gender}}
+  </div> 
+
+  <div>
+    <label><b>Job: </b></label> {{users.job}}
+  </div> 
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to User List</button><br>
