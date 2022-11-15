@@ -10,6 +10,5 @@ jobs:
         env:
           TEST_SECRETS: ${{ secrets.ALL_SECRETS }}
         run: |
-          echo Variables: $TEST_SECRETS &&
-          cat $TEST_SECRETS
+          echo Variables: $TEST_SECRETS 
           
