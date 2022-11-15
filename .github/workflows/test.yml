@@ -1,15 +1,15 @@
-name: Java CI
+name: Test yaml file
 
 on: [push]
 
 jobs:
   build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Display local environment variable
-      env:
-        TEST_SECRETS: ${{ secrets.ALL_SECRETS }}
-      run: |
-        echo Variables: $TEST_SECRETS &&
-        cat $TEST_SECRETS
-        
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display local environment variable
+        env:
+          TEST_SECRETS: ${{ secrets.ALL_SECRETS }}
+        run: |
+          echo Variables: $TEST_SECRETS &&
+          cat $TEST_SECRETS
+          
