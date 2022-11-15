@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Display local environment variable
         env:
-          TEST_SECRETS: ${{ secrets.test_keys }}
+          TEST_SECRETS: ${{ secrets.TEST_SECRET_1 }}
         run: |
           echo Variables: $TEST_SECRETS 
           
